@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: rgb(246, 246, 246);   */
+  /* overflow: hidden; */
+
+  /* .header {
+    flex: 1 100%;
+    height: 200px;
+  } */
+
+  .sidebar {
+    width: 20%;
+    height: 100%;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(243, 243, 243); */
+    padding: 10px 20px;
+    border-right: 1px solid rgb(230, 230, 230);
+    transition: all 0.3s ease-in-out linear;
+    @media screen and (max-width: 768px) {
+      transform: translateX(-200%);
+    }
+  }
+
+  /* .aside {
+    flex: 1 30%;
+    padding: 10px 20px;
+    border-left: 1px solid rgb(230, 230, 230);
+  } */
+  .main {
+    /* flex: 1 0%; */
+    display: flex;
+    width: 85%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      transform: translateX(20%);
+    }
+    padding: 10px 20px;
+  }
+}

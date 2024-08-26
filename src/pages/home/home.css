@@ -1,0 +1,14 @@
+.status {
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.playbtn div {
+  display: none;
+}
+
+.playbtn:hover div {
+  display: block;
+}
